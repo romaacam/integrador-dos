@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Productos</title>
+    <link rel="stylesheet" href="../css/alta.css">
+    <link rel="shortcut icon" href="../assets/img/logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar__logo">
+                <img src="../assets/img/logo.png" alt="Logo">
+            </a>
+            <h1>Electronigencia</h1>
+            <ul class="navbar__ul">
+                <li class="navbar__li"><a href="../index.html">Inicio</a></li>
+                <li class="navbar__li"><a href="./alta.html">Añadir Producto</a></li>
+                <li class="navbar__li"><a href="./contacto.html">Contacto</a></li>
+                <li class="navbar__li"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="navbar__li">
+                    <form action="" method="get">
+                        <input type="text" name="busqueda" placeholder="Buscar">
+                        <button type="submit" class="button__navbar">Buscar</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Agregar Producto</h1>
+        <form action="../js/alta.js" method="post">
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" required>
+    
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" required>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca">
+    
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria">
+    
+            <label for="descripcionCorta">Descripción Corta:</label>
+            <input type="text" id="descripcionCorta" name="descripcionCorta">
+    
+            <label for="descripcionLarga">Descripción Larga:</label>
+            <input type="text" id="descripcionLarga" name="descripcionLarga">
+
+            <label for="envioGratis">Envío sin Cargo:</label>
+            <input type="text" id="envioGratis" name="envioGratis">
+    
+            <label for="edadDesde">Edad Desde:</label>
+            <input type="number" id="edadDesde" name="edadDesde">
+    
+            <label for="edadHasta">Edad Hasta:</label>
+            <input type="number" id="edadHasta" name="edadHasta">
+    
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto">
+    
+            <input type="submit" value="Guardar">
+
+            <button type="submit" class="botonFormulario">Agregar</button>
+        </form>
+    </main>
+
+    <footer>
+        Copyright © Electronigencia 2024
+    </footer>
+</body>
+</html>
