@@ -2,68 +2,81 @@ body {
   background-image: linear-gradient(to bottom, rgba(39, 242, 80, 0.753), rgb(19, 103, 42));
   margin: 0;
   padding: 0;
+  min-height: 1080px;
 }
 
 .navbar {
   display: flex;
-  justify-content: left;
-  background-color:darkslategrey ;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategrey;
   border-bottom-left-radius: 150px;
   border-top-right-radius: 150px;
   border-bottom-right-radius: 12px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
-  .navbar__logo {
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 2rem;
-      margin-left: 24px;
-      margin-top: 0;
-  }
-  
-  .navbar__ul {
-      display: flex;
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-  }
+.navbar__logo img{
+  cursor: pointer;
+  text-decoration: none;
+  width: 150px; 
+  height: auto; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
 
-  .navbar__li {
-      display: flex;
-      padding: 10px;
-      padding-right: 10px;
+.navbar__title {  
+  display: flex;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-grow: 1;  /* Permite que el título ocupe el espacio restante */
+  justify-content: center; /* Centra el título horizontalmente */
+  text-align: center;
+}
 
-  }
+.navbar__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
 
-  .button__navbar {
-      background-color: rgb(0, 255, 221);
-      cursor: pointer;
-      border-radius: 5px;
-      padding: 5px;
-      font-family: 'handjet-bold';
-  }
-  
-  .button__navbar:hover {
-      background-color: #00b7ff4b;
-      color: #ffffff;
-  }
+.navbar__li {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  padding-right: 10px;
+  color: white;
+}
 
+.button__navbar {
+  background-color: rgb(0, 255, 221);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'handjet-bold';
+}
 
-  a {
+.button__navbar:hover {
+  background-color: #00b7ff4b;
+  color: #ffffff;
+}
 
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      font-family: 'handjet-bold';
-      font-size: large;
-
-  }
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'handjet-bold';
+  font-size: large;
+}
 
 @font-face {
   font-family: 'Handjet-bold';
   src: url(../assets/fonts/Handjet-Bold.ttf);
   font-weight: normal;
-  font-style: normal;
+  font-style:italic;
 }
 
 @font-face {
@@ -79,8 +92,6 @@ h1 {
   margin-top: 23px;
 }
 
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -88,72 +99,69 @@ h1 {
   width: fit-content;
   margin: 0 auto;
   max-width: 450px;
-
-      img {
-      max-width: 100%;
-      height: auto;
-      }
-
-      h2{
-      text-align: center;
-      background-color: rgba(0, 60, 255, 0.267);
-      margin-bottom: 0%;
-      font-size: xx-large;
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      }
-
-      h3 {
-          background-color: rgba(0, 60, 255, 0.267);
-          font-size:x-large;
-          margin-top: 0%;
-          margin-bottom: 0%;
-          width: 100%;
-          max-width: 100%;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          text-align: center;
-      }
-
-      p{
-          background-color: rgba(0, 60, 255, 0.267);
-          font-size:large;
-          margin-top: 0%;
-          margin-bottom: 0%;
-          width: 100%;
-          max-width: 100%;
-          padding-bottom: 20px;
-          text-align: center;
-          border-bottom-left-radius: 40px;
-          border-bottom-right-radius: 40px;
-      }
-
-      .button__card {
-          background-color: rgb(0, 247, 255);
-          margin-left: 20px;
-          margin-right: 20px;
-          cursor: pointer;
-          margin-block: 4%;
-          border-block: 4%;
-          padding: 12px;
-          border-radius: 20px;
-          font-size: x-large;
-          font-family: 'Handjet-bold';
-      }
-
-      .button__card:hover {
-          background-color: #00b7ff4b;
-          color: #ffffff;
-      }
-
 }
 
+.card img {
+  max-width: 100%;
+  height: auto;
+}
 
+.card h2 {
+  text-align: center;
+  background-color: rgba(0, 60, 255, 0.267);
+  margin-bottom: 0%;
+  font-size: xx-large;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card h3 {
+  background-color: rgba(0, 60, 255, 0.267);
+  font-size: x-large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card p {
+  background-color: rgba(0, 60, 255, 0.267);
+  font-size: large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.button__card {
+  background-color: rgb(0, 247, 255);
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-block: 4%;
+  border-block: 4%;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: x-large;
+  font-family: 'Handjet-bold';
+}
+
+.button__card:hover {
+  background-color: #00b7ff4b;
+  color: #ffffff;
+}
 
 footer {
   align-items: center;
@@ -164,4 +172,41 @@ footer {
   background-color: darkslategrey;
   color: #ffffff;
   text-align: center;
+}
+
+.footer__logo img {
+  text-decoration: none;
+  width: 75px; 
+  height: auto; 
+}
+
+.Redes {
+  display:flex;
+  justify-content:center;
+
+
+}
+
+@media (max-width: 768px) {
+  .navbar__title {
+    font-size: 2.5rem; 
+
+  }
+
+  .navbar__logo img {
+    width: 120px;
+  }
+  
+  .navbar {
+    padding: 10px 15px; 
+  }
+
+  .navbar__ul {
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  .navbar__li {
+    font-size: small;
+  }
 }
