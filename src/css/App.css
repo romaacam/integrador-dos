@@ -166,12 +166,13 @@ h1 {
 footer {
   align-items: center;
   text-align: center;
-  bottom: 0;
+  bottom: 0px;
   padding: 20px;
   margin: 0%;
   background-color: darkslategrey;
   color: #ffffff;
   text-align: center;
+  
 }
 
 .footer__logo img {
@@ -186,6 +187,8 @@ footer {
 
 
 }
+
+
 
 @media (max-width: 768px) {
   .navbar__title {
