@@ -1,4 +1,4 @@
-import '../css/App.css';
+
 import imagen from '../assets/img/logo.png';
 import twitter from '../assets/img/Twitter.png';
 import facebook from '../assets/img/Facebook.png';
